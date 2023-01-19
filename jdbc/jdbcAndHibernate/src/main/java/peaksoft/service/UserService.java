@@ -6,16 +6,16 @@ import java.util.List;
 
 public interface UserService {
 
-    void createUsersTable();
+    String createUsersTable();
 
-    void dropUsersTable();
+    String dropUsersTable();
 
-    void saveUser(String name, String lastName, byte age);
+    String saveUser(String name, String lastName, byte age);
 
-    void removeUserById(long id);
+    String removeUserById(long id);
 
     List<User> getAllUsers();
 
-    void cleanUsersTable();
+    String cleanUsersTable();
 }
 
